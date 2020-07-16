@@ -29,6 +29,8 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(applicationContext,message,Toast.LENGTH_SHORT).show()
 
             val intent=Intent(this,SecondActivity::class.java)
+
+            intent.putExtra("userMessage",message)
             startActivity(intent)
         }
 
